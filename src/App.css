@@ -7,22 +7,79 @@
   font-weight: 600;
 }
 
-.auth-container, .dashboard-container {
-  width: 80%;
-  margin: 0px auto;
+.main-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.auth-container, .dashboard-container{
+  width: 80vw;
 }
 
 .auth-container {
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   background-color: #fff;
-  
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
 }
 
 .dashboard-container {
-  height: calc(100vh - 100px);
+  min-height: calc(100vh - 80px);
   background-image: linear-gradient(to bottom, #e2f3ea, #ffffff);
 }
 
-button {
+.property-card {
+  width: 90%;
+  background-color: #f6f0f0;
+  margin: 50px auto;
+}
+
+.prop-img, .prop-desc, .prop-details, .delete {
+  float: left;
+}
+
+.prop-desc, .prop-details {
+  margin-left: 10px;
+}
+
+.prop-desc {
+  width: 50%;
+}
+
+.prop-details {
+  border-left: 1px solid black;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.clear-float {
+  clear: both;
+}
+
+label {
+  font-weight: 700;
+  line-height: 24px;
+}
+
+button, .logout, .delete {
   cursor: pointer;
+  border: 0px;
+  border-radius: 3px;
+}
+
+.light-green-button {
+  background-color: #8aea92;
+}
+
+.dark-green-button {
+  background-color: #3b5249;
+  color: #fff;
 }

@@ -28,3 +28,5 @@ VALUES
 ('https://photos.zillowstatic.com/cc_ft_768/ISjntxxyyfmf4c1000000000.webp', 'Move-In-Ready', 500000, 2500, 2600, 3000, '742 Evergreen Terrace', 'Springfield', 'MO', '11111', 1, 'description description description description description description description'),
 ('https://photos.zillowstatic.com/cc_ft_768/ISjntxxyyfmf4c1000000000.webp', 'Fixer Upper', 50000, 400, 500, 800, '123 Some Place', 'Some City', 'CA', '22222', 2, 'description description description description description description description'),
 ('https://photos.zillowstatic.com/cc_ft_768/ISjntxxyyfmf4c1000000000.webp', 'Needs Work', 20000, 1200, 1300, 1700, '987 Another Place', 'Another City', 'NV', '33333', 3, 'description description description description description description description');
+
+ALTER TABLE properties ADD COLUMN description TEXT properties(description);
