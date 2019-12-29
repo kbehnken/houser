@@ -1,14 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default class Wizard1 extends React.Component {
+export default class Wizard4 extends React.Component {
     render() {
         return (
             <div>
                 <div>
-                    This is Wizard1.
+                    This is Wizard4.
                 </div>
-                <Link to="/Wizard2">
+                <Link to="/Wizard3">
+                    <div>
+                        Previous
+                    </div>
+                </Link>
+                <Link to="/Wizard5">
                     <div>
                         Next
                     </div>

@@ -29,7 +29,7 @@ app.post('/api/auth/logout', authCtrl.logout);
 
 app.get('/api/properties', auth.usersOnly, propertyCtrl.getProperties);
 app.post('/api/properties', auth.usersOnly, propertyCtrl.addProperty);
-app.delete('/api/properties/:id', auth.usersOnly, propertyCtrl.deleteProperty);
+app.delete('/api/properties/:property_id', auth.usersOnly, propertyCtrl.deleteProperty);
 
 const PORT = 4000;
 app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
